@@ -4,13 +4,13 @@ import static org.assertj.core.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import com.hwan.springclient.config.ExchangeRateProperties;
 import com.hwan.springclient.exchange.Currency;
 import com.hwan.springclient.exchange.ExchangeRateResponse;
+import com.hwan.springclient.util.feign.FeignTest;
 
-@SpringBootTest
+@FeignTest
 class ExchangeRateOpenFeignTest {
 
     @Autowired
