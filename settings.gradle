@@ -9,3 +9,4 @@ pluginManagement {
 rootProject.name = 'spring-labs-v2'
 
 include 'clients:client'
+include 'storage:db-core-lecture'
