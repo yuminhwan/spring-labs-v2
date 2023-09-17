@@ -1,5 +1,17 @@
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+
 exchange:
   currency:
     api:
       uri: https://api.apilayer.com/currency_data/live
       key: tzJiLbnBvbvOo0q56dLItGD6qVZT233b
+
+logging:
+  level:
+    com.hwan.springclient.exchange.openfeign: DEBUG
