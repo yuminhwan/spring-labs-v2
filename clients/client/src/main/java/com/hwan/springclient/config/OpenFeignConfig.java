@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 import feign.Logger;
 import feign.Retryer;
+import feign.codec.ErrorDecoder;
 
 @Configuration
 @EnableFeignClients("com.hwan.springclient")
@@ -29,5 +30,10 @@ public class OpenFeignConfig {
     @Bean
     Logger.Level feignLoggerLevel() {
         return Logger.Level.FULL;
+    }
+
+    @Bean
+    ErrorDecoder errorDecoder() {
+        return new CustomErrorDecoder();
     }
 }
