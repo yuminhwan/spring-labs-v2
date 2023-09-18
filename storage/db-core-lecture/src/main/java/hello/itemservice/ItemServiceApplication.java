@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 
-import hello.itemservice.config.JdbcTemplateV3Config;
+import hello.itemservice.config.MybatisConfig;
 import hello.itemservice.repository.ItemRepository;
 
-@Import(JdbcTemplateV3Config.class)
+@Import(MybatisConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
