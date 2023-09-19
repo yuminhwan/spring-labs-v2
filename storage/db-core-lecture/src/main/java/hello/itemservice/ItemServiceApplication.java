@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 
-import hello.itemservice.config.QueryDslConfig;
+import hello.itemservice.config.V2Config;
 import hello.itemservice.repository.ItemRepository;
 
-@Import(QueryDslConfig.class)
+@Import(V2Config.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
