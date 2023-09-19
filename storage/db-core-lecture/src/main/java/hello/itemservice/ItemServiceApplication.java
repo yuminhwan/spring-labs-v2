@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 
-import hello.itemservice.config.JpaConfig;
+import hello.itemservice.config.SpringDataJpaConfig;
 import hello.itemservice.repository.ItemRepository;
 
-@Import(JpaConfig.class)
+@Import(SpringDataJpaConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
